@@ -48,9 +48,6 @@ namespace MultiShop.Catalog.Services.CategoryServices
 			var values = _mapper.Map<Category>(updateCategoryDto);
 			await _categoryCollection.FindOneAndReplaceAsync(x => x.CategoryID == updateCategoryDto.CategoryID, values);
 
-
-
-
 		}
 	}
 }
